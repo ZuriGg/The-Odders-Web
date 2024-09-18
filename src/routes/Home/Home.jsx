@@ -7,7 +7,7 @@ function Home() {
             <div className="homeContainer">
                 <h1>The Odders</h1>
 
-                <h2>Ráscame las pelotas...</h2>
+                <h2>Disponibles a 5km de ti ciudad </h2>
 
                 <img src="/assets/img/LogoLargo.png" alt="" />
             </div>

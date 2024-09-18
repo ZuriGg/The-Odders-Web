@@ -12,6 +12,24 @@ footer {
     bottom: 0;
 }
 
-footer .categoria {
+footer p {
     margin-right: 2vh;
+}
+
+footer .categoria {
+    color: red;
+    margin-right: 1vh;
+}
+
+.iconoFooter {
+    aspect-ratio: 1/1;
+    width: 2%;
+    margin-inline: 0.3vh;
+    border-radius: 1vh;
+    transition: all 0.4s;
+}
+
+.iconoFooter:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }

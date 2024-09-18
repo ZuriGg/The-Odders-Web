@@ -24,15 +24,17 @@
 .homeContainer img {
     width: 15%;
     position: absolute;
-    bottom: 5px;
-    left: 15px;
+    bottom: 0.5vh;
+    left: 2vh;
     aspect-ratio: 9/2;
 }
 
 .homeContainer h1 {
+    color: red;
     display: flex;
     justify-content: center;
     font-size: 10vh;
+    font-weight: 700;
     width: 100%;
     height: fit-content;
 }
