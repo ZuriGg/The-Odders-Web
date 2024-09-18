@@ -1,35 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+
+import "./App.css";
+
+import Home from "./routes/Home/Home.jsx";
+import Musica from "./routes/Musica/Musica.jsx";
+import Fotos from "./routes/Fotos/Fotos.jsx";
+import Videos from "./routes/Videos/Videos.jsx";
+import Eventos from "./routes/Eventos/Eventos.jsx";
+import TheOdders from "./routes/TheOdders/TheOdders.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Header from "./components/Header/Header.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+    const location = useLocation();
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    useEffect(() => {
+        if (location.pathname === "/") {
+            document.title = "The Odders - Home";
+        } else if (location.pathname === "/the-odders") {
+            document.title = "The Odders - About";
+        } else if (location.pathname === "/musica") {
+            document.title = "The Odders - Música";
+        } else if (location.pathname === "/fotos") {
+            document.title = "The Odders - Fotos";
+        } else if (location.pathname === "/videos") {
+            document.title = "The Odders - Vídeos";
+        } else if (location.pathname === "/eventos") {
+            document.title = "The Odders - Eventos";
+        } else {
+            document.title = "The Odders";
+        }
+    }, [location]);
+
+    return (
+        <>
+            <Header />
+
+            <main>
+                <Routes>
+                    <Route index path="/" element={<Home />} />
+                    <Route path="the-odders" element={<TheOdders />} />
+                    <Route path="musica" element={<Musica />} />
+                    <Route path="fotos" element={<Fotos />} />
+                    <Route path="videos" element={<Videos />} />
+                    <Route path="eventos" element={<Eventos />} />
+
+                    <Route path="*" element={<Navigate to="/" replace />} />
+                </Routes>
+            </main>
+            <Footer />
+        </>
+    );
 }
 
-export default App
+export default App;
