@@ -10,6 +10,7 @@ footer {
     font-size: 2vh;
     font-weight: 500;
     bottom: 0;
+    z-index: 2;
 }
 
 footer p {

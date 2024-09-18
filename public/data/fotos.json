@@ -34,5 +34,17 @@
         "titulo": "Aplastando a Zuri v2",
         "descripcion": "Isma sentado encima de Zuri por que puede, mientras que el resto posa para la foto",
         "src": "assets/img/1684104757098.jpg"
+    },
+    {
+        "id": 7,
+        "titulo": "Inés grabando",
+        "descripcion": "Inés siendo grabada por Zuri para el disco que todavía no ha visto la luz",
+        "src": "assets/img/1690550587203.jpg"
+    },
+    {
+        "id": 8,
+        "titulo": "Posando en A.D.",
+        "descripcion": "Una fotografía tomada tras el primer debut de la banda Tape on Sale, de la cual forman parte Jesus y Zuri",
+        "src": "assets/img/1716648763083.jpg"
     }
 ]
