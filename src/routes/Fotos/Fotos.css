@@ -1,0 +1,25 @@
+.fondoFotos {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.fondoFotos::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/videos/ondasNegrasFondo.gif");
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.fotosContainer {
+    width: 100%;
+    height: 100%;
+    margin-top: 12vh;
+    transition: all 0.3s;
+}

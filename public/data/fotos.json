@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "titulo": "Calle en pueblo de Gor",
+        "descripcion": "The odders posando en una calle del pueblo de Gor, en Granada - Andalucía",
+        "src": "assets/img/1690398427237.jpg"
+    },
+    {
+        "id": 2,
+        "titulo": "The odders en el coche",
+        "descripcion": "Ismael conduciendo el Smart de la madre de Zuri, de camino a casa tras el viaje a Gor (Granada)",
+        "src": "assets/img/1690398427408.jpg"
+    },
+    {
+        "id": 3,
+        "titulo": "Isma acabado",
+        "descripcion": "Ismael en el suelo tras un dia de baja energía",
+        "src": "assets/img/1684104556350.jpg"
+    },
+    {
+        "id": 4,
+        "titulo": "Inés y Zuri",
+        "descripcion": "Inés y Zuri en el coche de Isma de viaje a Arenales del Sol para una bonita velada musical en 2023",
+        "src": "assets/img/1684104556380.jpg"
+    },
+    {
+        "id": 5,
+        "titulo": "Aplastando a Zuri",
+        "descripcion": "Jesus, inés e Isma sentados encima de Zuri en el sofá de casa de Jesús en Arenales del Sol",
+        "src": "assets/img/SobreZuri.jpg"
+    },
+    {
+        "id": 6,
+        "titulo": "Aplastando a Zuri v2",
+        "descripcion": "Isma sentado encima de Zuri por que puede, mientras que el resto posa para la foto",
+        "src": "assets/img/1684104757098.jpg"
+    }
+]
